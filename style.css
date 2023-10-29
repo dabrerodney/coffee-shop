@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&family=Roboto:wght@100&display=swap');
 
-
-:root{
-    
-}
-
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -15,7 +10,6 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
-    color: white;
 }
 
 html{
@@ -33,12 +27,20 @@ html{
     background-size: cover;
 }
 
+section{
+    padding: 8rem 7%;
+}
+
+h1 h3{
+    color: white;
+}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 7%;
-    position: fixed;
+    padding: 1rem 5%;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -67,7 +69,7 @@ nav .links a:after {
     content: '';
     width: 0%;
     height: 2px;
-    background: black;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -86,12 +88,14 @@ nav #menu-btn , nav #close{
     padding: 150px 7%;
     color: white;
 }
+
 .header .content h3{
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 3rem 0;
 }
+
 .header .content h1{
     font-size: 3.5rem;
     letter-spacing: 2px;   
@@ -114,3 +118,93 @@ nav #menu-btn , nav #close{
     color: white;
     transform: translate(0px, -3px);
 }
+
+.about{
+    background-color: black;
+}
+
+.about .container .about-content{
+    color: white;
+}
+
+.about .container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.about .container .image{
+    flex-basis: 50%;
+    background: url("two.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16rem 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container .about-content{
+    flex-basis: 40%;
+}
+.about .container .about-content h1{
+    font-size: 3rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.about .container .about-content h3{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+
+.about .container .about-content p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5;
+}
+
+.blog{
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.heading-description{
+    text-align: center;
+    padding: 1.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.blog .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+
+.blog .container .post .blog-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+}.blog .container .post .blog-image img{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin: 10px;
+    border-left: 2px solid white;
+}
+
